@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#07193e</color>
+    <color name="gCard">#db4437</color>
 </resources>
