@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">North Rovers</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="quick_support">Quick Support. Do you want help?</string>
+    <string name="title">North Rovers</string>
+    <string name="logo_north_rovers">Logo North Rovers</string>
+    <string name="copyright">Copyright © North Rovers 2021. All rights reserved</string>
 </resources>

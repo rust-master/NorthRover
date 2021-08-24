@@ -12,7 +12,8 @@
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:background="@drawable/logo" />
+        android:background="@drawable/logo"
+        android:contentDescription="@string/logo_north_rovers" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,9 +22,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="North Rovers"
+        android:text="@string/title"
         android:textColor="@color/mainColor"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardGoogleSignIn"
@@ -33,6 +34,7 @@
         android:layout_centerVertical="true"
         android:layout_margin="40dp"
         android:clickable="true"
+        android:focusable="true"
         app:cardBackgroundColor="@color/gCard"
         app:cardCornerRadius="50dp">
 
@@ -42,10 +44,10 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/ubuntumedium"
             android:padding="15dp"
-            android:text="Sign in with Google"
+            android:text="@string/sign_in_with_google"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="15dp" />
+            android:textSize="15sp" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
@@ -55,7 +57,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ubuntumedium"
-        android:text="Quick Support. Do you want help?"
+        android:text="@string/quick_support"
         android:textSize="16sp" />
 
 </RelativeLayout>
