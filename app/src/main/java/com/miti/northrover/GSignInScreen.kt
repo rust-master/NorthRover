@@ -57,7 +57,7 @@ class GSignInScreen : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
 
-        Toast.makeText(this, "W A L L ' S \nC O V I D - 1 9   ", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "N O R T H   R O V E R S", Toast.LENGTH_SHORT).show()
 
         val user = mAuth!!.currentUser
         if (user != null) {
