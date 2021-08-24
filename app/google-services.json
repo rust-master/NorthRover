@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "647874209783",
+    "project_id": "northrovers-9a224",
+    "storage_bucket": "northrovers-9a224.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647874209783:android:55b82c1cf37deb3526f0f2",
+        "android_client_info": {
+          "package_name": "com.miti.northrover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647874209783-nbajr5q2qaeghtk03n4lbl6kfumil0ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miti.northrover",
+            "certificate_hash": "34f8766d79375f6232e4878d53e4241fdbe47ea0"
+          }
+        },
+        {
+          "client_id": "647874209783-kvi4ttou2vpnukpg1161nmdm6a2mdogi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV0t7Nh9TmP2Qhr8KyGX-vVm9nrJ4vnpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647874209783-kvi4ttou2vpnukpg1161nmdm6a2mdogi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
