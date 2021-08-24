@@ -1,63 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/logo"
-        android:contentDescription="@string/logo_north_rovers" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/ubuntumedium"
-        android:text="@string/title"
-        android:textColor="@color/mainColor"
-        android:textSize="20sp" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardGoogleSignIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="40dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:cardBackgroundColor="@color/gCard"
-        app:cardCornerRadius="50dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/ubuntumedium"
-            android:padding="15dp"
-            android:text="@string/sign_in_with_google"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/cardGoogleSignIn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/ubuntumedium"
-        android:text="@string/quick_support"
-        android:textSize="16sp" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
