@@ -33,17 +33,15 @@
 
 
     <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
-        android:textSize="15sp"
-        android:textColor="@color/mainColor"
-        android:fontFamily="@font/ubunturegular"
-        android:text="Copyright © North Rovers 2021. All rights reserved"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
-
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/ubunturegular"
+        android:text="Copyright © North Rovers 2021. All rights reserved"
+        android:textColor="@color/mainColor"
+        android:textSize="15sp" />
 
 
 </RelativeLayout>
