@@ -106,9 +106,6 @@ class GSignInScreen : AppCompatActivity() {
 
                     val uid = mAuth!!.uid
                     dbRef!!.child(uid!!).setValue(model)
-                    Log.d("Name", user.displayName.toString())
-                    Log.d("Email", user.email.toString())
-                    Log.d("UID", mAuth!!.uid.toString())
 
                     val intent = Intent(this@GSignInScreen, MainActivity::class.java)
                     startActivity(intent)
