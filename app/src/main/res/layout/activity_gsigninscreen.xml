@@ -32,7 +32,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_margin="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
         android:clickable="true"
         android:focusable="true"
         app:cardBackgroundColor="@color/gCard"
@@ -50,12 +52,20 @@
             android:textSize="15sp" />
     </com.google.android.material.card.MaterialCardView>
 
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cardGoogleSignIn"
+        android:layout_centerHorizontal="true"
+        android:background="@color/mainColor" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cardGoogleSignIn"
+        android:layout_below="@id/rl"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/ubuntumedium"
         android:text="@string/quick_support"
         android:textSize="16sp" />
