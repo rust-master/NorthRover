@@ -3,6 +3,7 @@ package com.miti.northrover
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -13,6 +14,9 @@ import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.miti.northrover.Model.UserModel
 import com.miti.northrover.databinding.ActivityGsigninscreenBinding
 
 
@@ -22,6 +26,8 @@ class GSignInScreen : AppCompatActivity() {
     private var mGoogleSignInClient: GoogleSignInClient? = null
     private val RC_SIGN_IN = 123
     private var mAuth: FirebaseAuth? = null
+    private var db: FirebaseDatabase? = null
+    private var dbRef: DatabaseReference? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +35,8 @@ class GSignInScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         mAuth = FirebaseAuth.getInstance()
+        db = FirebaseDatabase.getInstance()
+        dbRef = db!!.getReference("Users")
 
         createRequest()
 
@@ -89,6 +97,19 @@ class GSignInScreen : AppCompatActivity() {
             ) { task ->
                 if (task.isSuccessful) {
                     val user = mAuth!!.currentUser
+                    val model = UserModel(
+                        user!!.displayName.toString(),
+                        user.email.toString(),
+                        "empty",
+                        "epmty"
+                    )
+
+                    val uid = mAuth!!.uid
+                    dbRef!!.child(uid!!).setValue(model)
+                    Log.d("Name", user.displayName.toString())
+                    Log.d("Email", user.email.toString())
+                    Log.d("UID", mAuth!!.uid.toString())
+
                     val intent = Intent(this@GSignInScreen, MainActivity::class.java)
                     startActivity(intent)
                 } else {
