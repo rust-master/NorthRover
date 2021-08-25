@@ -5,5 +5,7 @@
     <string name="title">North Rovers</string>
     <string name="logo_north_rovers">Logo North Rovers</string>
     <string name="copyright">Copyright © North Rovers 2021. All rights reserved</string>
-<!--    <string name="default_web_client_id">647874209783-kvi4ttou2vpnukpg1161nmdm6a2mdogi.apps.googleusercontent.com</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="default_web_client_id">647874209783-kvi4ttou2vpnukpg1161nmdm6a2mdogi.apps.googleusercontent.com</string>-->
 </resources>
